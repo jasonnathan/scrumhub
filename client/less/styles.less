@@ -9,11 +9,11 @@ body {
 }
 
 .menu {
-    height: 5vh;
+    height: 6vh;
 }
 
 .cols {
-    min-height: 95vh;
+    min-height: 94vh;
     background-color: #fff;
     color: #fff;
     h1 {
@@ -23,37 +23,51 @@ body {
     }
 }
 
-.storyCol {
-    background: rgba(1, 1, 1, .1);
+.story {
+    //        margin-left: 1em !important;
+    .buttons {
+        border-radius: 0;
+        margin: -.8em auto .8em auto;
+        .button {
+            border-radius: 0;
+        }
+    }
+    h4 {
+        margin-top: 0;
+    }
+}
+
+.storyCol,
+.boardCol {
+    background: rgba(255, 255, 255, .9);
     h1 {
-        color: #fff;
+        color: #666;
     }
     .story {
         margin-left: 1em !important;
-        .buttons {
-            border-radius: 0;
-            margin: -.8em auto .8em auto;
-            .button {
-                border-radius: 0;
-            }
+        .header {
+            color: #fff;
+            text-shadow: -1px -1px 0 rgba(59, 131, 192, 1);
         }
-        h3 {
-            margin-top: 0;
-            .header {
-                color: #fff;
-            }
-        }
+    }
+}
+
+.boardCol {
+    box-shadow: 0 0 5px #ccc;
+    .story .header {
+        color: rgba(1, 1, 1, .6);
+        text-shadow: none;
     }
 }
 
 .todoCol {
-    border-right: 2px dashed #666;
+    border-right: 2px dashed #ccc;
 }
 
 .startedCol {
-    border-right: 2px dashed #666;
+    border-right: 2px dashed #ccc;
 }
 
 .completedCol {
-    border-right: 2px dashed #666;
+    //    border-right: 2px dashed #ccc;
 }

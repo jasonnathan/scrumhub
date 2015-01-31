@@ -1,21 +1,15 @@
 <template name="Home">
-    <div class="ui secondary pointing menu">
+    <div class="ui fluid four item menu">
         <a class="active item">
-            <i class="home icon"></i> Home
+            <i class="list icon"></i> Test Menu 1
         </a>
         <a class="item">
-            <i class="mail icon"></i> Messages
+            <i class="list icon"></i> Test Menu 2
         </a>
         <a class="item">
-            <i class="user icon"></i> Friends
+            <i class="list icon"></i> Test Menu 3
         </a>
         <div class="right menu">
-            <div class="item">
-                <div class="ui icon input">
-                    <input type="text" placeholder="Search...">
-                    <i class="search link icon"></i>
-                </div>
-            </div>
             <a class="ui item">
       Logout
     </a>
@@ -49,17 +43,48 @@
                         </div>
                     </div>
                 </div>
-                <h3><a class="header">As a Product Manager, I need to be able to see everything that is going on.</a></h3>
-                <a class="ui teal right tag label">Sprint 1</a>
+                <h4><a class="header">As a Product Manager, I need to be able to see everything that is going on.</a></h4>
+                <a class="small ui teal label">Sprint 1</a>
+                <a class="small ui red label">Testing</a>
+                <a class="small ui green label">Passed</a>
+
             </div>
         </section>
-        <section class="cols todoCol four wide column">
+        <section class="cols boardCol todoCol four wide column">
             <h1>To Do</h1>
+            <div class="ui yellow inverted segment piled story">
+                <div class="3 small fluid ui buttons">
+                    <div class="ui basic animated fade button">
+                        <div class="visible content"><i class="edit icon"></i>
+                        </div>
+                        <div class="hidden content">
+                            Edit
+                        </div>
+                    </div>
+                    <div class="ui basic animated fade button">
+                        <div class="visible content"><i class="move icon"></i>
+                        </div>
+                        <div class="hidden content">
+                            Move
+                        </div>
+                    </div>
+                    <div class="ui basic animated fade button">
+                        <div class="visible content"><i class="expand icon"></i>
+                        </div>
+                        <div class="hidden content">
+                            Expand
+                        </div>
+                    </div>
+                </div>
+                <h4><a class="header">As a Product Manager, I need to be able to see everything that is going on.</a></h4>
+                <a class="small ui teal label">Sprint 1</a>
+                <a class="small ui red label">Testing</a>
+                <a class="small ui green label">Passed</a> </div>
         </section>
-        <section class="cols startedCol four wide column">
+        <section class="cols boardCol startedCol four wide column">
             <h1>Started</h1>
         </section>
-        <section class="cols testingCol four wide column">
+        <section class="cols boardCol completedCol four wide column">
             <h1>Completed</h1>
         </section>
     </div>
