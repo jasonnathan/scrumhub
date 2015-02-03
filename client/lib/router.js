@@ -1,9 +1,11 @@
 Router.configure({
-    //layoutTemplate: 'masterLayout',
+    layoutTemplate: 'MasterLayout',
     //loadingTemplate: 'loading',
     //notFoundTemplate: 'pageNotFound',
-    //yieldTemplates: {
-    //    nav: {to: 'nav'},
+    //    yieldTemplates: {
+    //        nav: {
+    //            to: 'MainMenu'
+    //        },
     //    footer: {to: 'footer'},
     //}
 });
@@ -12,10 +14,42 @@ Router.configure({
 Router.map(function () {
     this.route('home', {
         path: '/',
-        template: 'Home'
+        onBeforeAction: function () {
+            if (Meteor.userId()) {
+                this.redirect('/Stories');
+            }
+            //this.redirect('/Stories')
+            this.next();
+        },
+        template: 'loginForm',
+        layoutTemplate: null
+    });
+    this.route('Sprint', {
+        //path: '/Sprint/:_id/edit?',
+        path: '/Sprint',
+
+        //onBeforeAction: AccountsTemplates.ensureSignedIn,
+        template: 'Sprint'
+    });
+    this.route('Sprints', {
+        //path: '/Sprint/:_id/edit?',
+        path: '/Sprints',
+
+        //onBeforeAction: AccountsTemplates.ensureSignedIn,
+        template: 'Sprints'
+    });
+    this.route('Stories', {
+        path: 'Stories',
+        template: 'Stories'
     });
 
-    this.route('private', {
-        onBeforeAction: AccountsTemplates.ensureSignedIn
+    this.route('Profile', {
+        path: 'Profile',
+        template: 'Profile'
     });
+    this.route('Admin', {
+        path: 'Admin',
+        template: 'Users'
+    });
+
 });

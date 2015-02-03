@@ -5,14 +5,13 @@
 # but you can also edit it by hand.
 
 meteor-platform
-insecure
 mike:mocha
 nblazer:casperjs
 percolate:momentum
-achmanngopf:dragdrop
 accounts-github
 bruz:github-api
-accounts-ui-unstyled
 less
-nooitaf:semantic-ui
-useraccounts:semantic-ui
+iron:router
+fastclick
+jasonnathan:semantic-ui
+zimme:iron-router-active

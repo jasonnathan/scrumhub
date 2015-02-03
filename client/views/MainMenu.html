@@ -1,0 +1,16 @@
+<template name="MainMenu">
+    <div id="MainMenu" class="ui inverted labeled left inline vertical sidebar menu visible">
+        <a href="{{pathFor route='Stories'}}" class="{{isActiveRoute regex='Stories'}} item">
+            <i class="file text outline icon"></i> Stories (PBI)
+        </a>
+        <a href="{{pathFor route='Sprints'}}" class="{{isActiveRoute regex='Sprints'}} item">
+            <i class="tasks icon"></i> Sprints
+        </a>
+        <a href="{{pathFor route='Profile'}}" class="{{isActiveRoute regex='Profile'}} item">
+            <i class="smile icon"></i> Profile
+        </a>
+        <a href="{{pathFor route='Admin'}}" class="{{isActiveRoute regex='Admin'}} item">
+            <i class="setting icon"></i> Admin
+        </a>
+    </div>
+</template>

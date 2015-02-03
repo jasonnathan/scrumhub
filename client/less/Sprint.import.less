@@ -1,0 +1,75 @@
+.cols {
+    //    height: 100%;
+    //    max-height: 95vh;
+    background-color: #fff;
+    color: #fff;
+    h2 {
+        text-align: center;
+        color: #333;
+        margin: .1em auto;
+    }
+}
+
+.story {
+    //        margin-left: 1em !important;
+    .buttons {
+        border-radius: 0;
+        margin: -.8em auto .8em auto;
+        .button {
+            border-radius: 0;
+        }
+    }
+    h4 {
+        margin-top: 0;
+    }
+}
+
+.storyCol,
+.boardCol {
+    background: #fff;
+    h2 {
+        color: #666;
+    }
+    .relative {
+        margin-left: 1em;
+        .label {
+            font-family: Helvetica, Verdana, sans-serif;
+            text-align: right;
+            padding: .3em .3em 0 0;
+        }
+    }
+    .story {
+        margin-left: 1em !important;
+        .header {
+            color: #fff;
+            text-shadow: -1px -1px 0 rgba(59, 131, 192, 1);
+        }
+        .ui.basic.button {
+            &:hover {
+                background-color: rgba(255, 255, 255, .2) !important;
+                box-shadow: 0 0 5px 1px rgba(1, 1, 1, .1) !important;
+            }
+        }
+    }
+}
+
+.boardCol {
+    box-shadow: 0 0 5px 1px #ddd;
+    background: url('/images/green-dust-and-scratches.png') rgba(255, 255, 255, .9);
+    .story .header {
+        color: rgba(1, 1, 1, .6);
+        text-shadow: none;
+    }
+}
+
+.todoCol {
+    border-right: 2px dashed #ccc;
+}
+
+.startedCol {
+    border-right: 2px dashed #ccc;
+}
+
+.completedCol {
+    //    border-right: 2px dashed #ccc;
+}
