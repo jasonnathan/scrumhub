@@ -73,3 +73,151 @@
 .completedCol {
     //    border-right: 2px dashed #ccc;
 }
+// Color variables (appears count calculates by raw css)
+@color0: #99bb22; // Appears 5 times
+@color1: #ffffff; // Appears 2 times
+@color2: #2288ee; // Appears 2 times
+
+// Width variables (appears count calculates by raw css)
+@width3: 0; // Appears 3 times
+@width100:100%;
+// Height variables (appears count calculates by raw css)
+@height3: 0; // Appears 3 times
+
+.time_bar {
+    ol {
+        background: @color0;
+        display: block;
+        height: 4px;
+        margin: 100px;
+        position: relative;
+    }
+}
+.time_bar {
+    ol {
+        &::before {
+            border-radius: 10px;
+            border: 10px solid @color0;
+            content: "";
+            display: block;
+            height: @height3;
+            left: -5px;
+            position: absolute;
+            top: -8px;
+            width: @width3;
+        }
+        &::after {
+            border-left: 20px solid @color0;
+            border-radius: 10px;
+            border-radius: 3px;
+            border-right: 0;
+            border: 10px solid @color0;
+            border: 10px solid transparent;
+            content: "";
+            display: block;
+            height: @height3;
+            position: absolute;
+            right: -10px;
+            top: -8px;
+            width: @width3;
+        }
+    }
+    li {
+        display: inline-block;
+        float: left;
+        font: bold 14px arial;
+        position: relative;
+        top: -77px;
+        transform: rotate(-45deg);
+        width: 150px;
+        &::before {
+            background: #eeeeee;
+            border-radius: 10px;
+            border: 4px solid @color0;
+            content: "";
+            display: block;
+            height: 6px;
+            left: -29px;
+            position: absolute;
+            top: 3px;
+            width: 6px;
+        }
+        &:hover {
+            color: @color2;
+            cursor: pointer;
+            .details {
+                color: #444444;
+                display: block;
+            }
+        }
+    }
+    .details {
+        background: @color1;
+        border-bottom: 2px solid rgba(0,0,0,.1);
+        border-radius: 3px;
+        border-right: 2px solid rgba(0,0,0,.1);
+        display: none;
+        font: 12px arial;
+        left: -85px;
+        padding: 15px;
+        position: absolute;
+        top: 60px;
+        transform: rotate(45deg);
+        &::before {
+            border-bottom-color: @color1;
+            border-top: 0;
+            border: 10px solid transparent;
+            content: "";
+            display: block;
+            height: @height3;
+            left: 10px;
+            position: absolute;
+            top: -9px;
+            width: @width3;
+        }
+    }
+    li:hover {
+        &::before {
+            border-color: @color2;
+            border-width: 5px;
+            height: 8px;
+            left: -31px;
+            top: 1px;
+            width: 8px;
+        }
+    }
+}
+.graph-bg{
+    float: left;
+    width: @width100;
+    margin-bottom: 20px;
+}
+.graph-bt{
+    float: right;
+    width: 100px;
+}
+.grid{
+    float: left;
+    width: @width100;
+}
+.bt-right{
+    float: right;
+    margin: 20px !important;
+}
+.ui.inverted.light-red.segment{
+    background-color: #ecbebe !important;
+}
+.ui.inverted.light-yellow.segment{
+    background-color: #f3eea4 !important;
+}
+.ui.inverted.light-green.segment{
+    background-color: #a3db82 !important;
+}
+
+.ui.inverted.light-blue.segment{
+    background-color: #8fbbe4 !important;
+}
+.content-wrapper{
+    width: 90%;
+    margin:10px auto;
+}

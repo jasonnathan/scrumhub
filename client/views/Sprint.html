@@ -1,12 +1,45 @@
 <template name="Sprint">
+<div class="content-wrapper">
+<div class="time_bar">
+    <ol>
+      <li>
+        Point 1
+        <span class="details">
+          Feb 5 2015
+        </span>
+      </li>
+      <li>
+        Point 2
+        <span class="details">
+          Feb 8 2015
+        </span>
+      </li>
+      <li>
+        Point 3
+        <span class="details">
+          Feb 15 2015
+        </span>
+      </li>
+    </ol>
+</div>
+<div class="graph-bg">
+<div class="ui primary button bt-right">
+  View Graph
+</div>
+    <div>
+        <div>
+            <canvas id="canvas" height="250px" width="800px"></canvas>
+        </div>
+    </div>  
+</div>
     <div class="ui grid">
         <div class="equal height row">
-            <section class="cols storyCol four wide column">
+            <section class="cols boardCol todoCol four wide column">
                 <div class="relative">
                     <span class="ui corner inverted orange label">15</span>
                     <h2>Stories</h2>
                 </div>
-                <div class="ui blue inverted segment piled story">
+                <div class="ui light-blue inverted segment piled story">
                     <div class="3 small fluid ui buttons">
                         <div class="ui basic animated fade button">
                             <div class="visible content"><i class="edit icon"></i>
@@ -22,7 +55,7 @@
                                 Move
                             </div>
                         </div>
-                        <div class="ui basic animated fade button">
+                        <div class="ui basic animated fade button" id="dropAccordion">
                             <div class="visible content"><i class="expand icon"></i>
                             </div>
                             <div class="hidden content">
@@ -35,6 +68,16 @@
                     <a class="small ui red label">Testing</a>
                     <a class="small ui green label">Passed</a>
 
+    <div class="ui accordion">
+        <div class="title">
+          <i class="icon dropdown"></i>
+          More Details
+        </div>
+        <div class="content">
+          <p>Some more infomation</p>
+        </div>
+
+      </div>
                 </div>
             </section>
             <section class="cols boardCol todoCol four wide column">
@@ -42,7 +85,7 @@
                     <span class="ui corner inverted orange label">12</span>
                     <h2>To Do</h2>
                 </div>
-                <div class="ui yellow inverted segment piled story">
+                <div class="ui light-red inverted segment piled story">
                     <div class="3 small fluid ui buttons">
                         <div class="ui basic animated fade button">
                             <div class="visible content"><i class="edit icon"></i>
@@ -58,7 +101,7 @@
                                 Move
                             </div>
                         </div>
-                        <div class="ui basic animated fade button">
+                        <div class="ui basic animated fade button ">
                             <div class="visible content"><i class="expand icon"></i>
                             </div>
                             <div class="hidden content">
@@ -69,20 +112,111 @@
                     <h4><a class="header">As a Product Manager, I need to be able to see everything that is going on.</a></h4>
                     <a class="small ui teal label">Sprint 1</a>
                     <a class="small ui red label">Testing</a>
-                    <a class="small ui green label">Passed</a> </div>
+                    <a class="small ui green label">Passed</a>
+                    <div class="ui accordion">
+        <div class="title">
+          <i class="icon dropdown"></i>
+          More Details
+        </div>
+        <div class="content">
+          <p>Some more infomation</p>
+        </div>
+
+      </div>
+       </div>
             </section>
             <section class="cols boardCol startedCol four wide column">
                 <div class="relative">
                     <span class="ui corner inverted orange label">12</span>
                     <h2>Started</h2>
                 </div>
+                <div class="ui light-yellow inverted segment piled story">
+                    <div class="3 small fluid ui buttons">
+                        <div class="ui basic animated fade button">
+                            <div class="visible content"><i class="edit icon"></i>
+                            </div>
+                            <div class="hidden content">
+                                Edit
+                            </div>
+                        </div>
+                        <div class="ui basic animated fade button">
+                            <div class="visible content"><i class="move icon"></i>
+                            </div>
+                            <div class="hidden content">
+                                Move
+                            </div>
+                        </div>
+                        <div class="ui basic animated fade button ">
+                            <div class="visible content"><i class="expand icon"></i>
+                            </div>
+                            <div class="hidden content">
+                                Expand
+                            </div>
+                        </div>
+                    </div>
+                    <h4><a class="header">As a Product Manager, I need to be able to see everything that is going on.</a></h4>
+                    <a class="small ui teal label">Sprint 1</a>
+                    <a class="small ui red label">Testing</a>
+                    <a class="small ui green label">Passed</a> 
+                    <div class="ui accordion">
+        <div class="title">
+          <i class="icon dropdown"></i>
+          More Details
+        </div>
+        <div class="content">
+          <p>Some more infomation</p>
+        </div>
+
+      </div>
+      </div>
             </section>
             <section class="cols boardCol completedCol four wide column">
                 <div class="relative">
                     <span class="ui corner inverted orange label">12</span>
                     <h2>Finished</h2>
                 </div>
+<div class="ui light-green inverted segment piled story">
+                    <div class="3 small fluid ui buttons">
+                        <div class="ui basic animated fade button">
+                            <div class="visible content"><i class="edit icon"></i>
+                            </div>
+                            <div class="hidden content">
+                                Edit
+                            </div>
+                        </div>
+                        <div class="ui basic animated fade button">
+                            <div class="visible content"><i class="move icon"></i>
+                            </div>
+                            <div class="hidden content">
+                                Move
+                            </div>
+                        </div>
+                        <div class="ui basic animated fade button" id="dropAccordion">
+                            <div class="visible content"><i class="expand icon"></i>
+                            </div>
+                            <div class="hidden content">
+                                Expand
+                            </div>
+                        </div>
+                    </div>
+                    <h4><a class="header">As a Product Manager, I need to be able to see everything that is going on.</a></h4>
+                    <a class="small ui teal label">Sprint 1</a>
+                    <a class="small ui red label">Testing</a>
+                    <a class="small ui green label">Passed</a>
+
+<div class="ui accordion">
+        <div class="title">
+          <i class="icon dropdown"></i>
+          More Details
+        </div>
+        <div class="content">
+          <p>Some more infomation</p>
+        </div>
+
+      </div>
+                </div>
             </section>
         </div>
-    </div>
+</div>
+</div>
 </template>
