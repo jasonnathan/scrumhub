@@ -5,6 +5,7 @@ Template.Sprint.rendered = function () {
     graphAccordion = $('.ui.accordion').accordion();
     randomAccordion = $('.ui.accordion').accordion();
 	
+
 	var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
 			var lineChartData = {
 				labels : ["Feb 4","Feb 8","Feb 12","Feb 16","Feb 20","Feb 24","Feb 28"],
@@ -53,4 +54,6 @@ Template.Sprint.events({
 
 	}
 });
+
+
 

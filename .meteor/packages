@@ -15,3 +15,5 @@ iron:router
 fastclick
 jasonnathan:semantic-ui
 zimme:iron-router-active
+chart:chart
+mrt:fittext

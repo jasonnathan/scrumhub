@@ -44,12 +44,16 @@ Router.map(function () {
     });
 
     this.route('Profile', {
-        path: 'Profile',
+        path: '/Profile',
         template: 'Profile'
     });
     this.route('Admin', {
-        path: 'Admin',
+        path: '/Admin',
         template: 'Users'
+    });
+    this.route('forms', {
+        path: '/forms',
+        template: 'forms'
     });
 
 });

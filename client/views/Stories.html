@@ -1,20 +1,414 @@
 <template name="Stories">
     <!--
 (Wizard to display welcome message and option to create new story or explore if no stories present)
-1. Display List of Stories that are formattable on list and grid view
+1. Display List of Stories that are formattable on list view
 2. Stories must be sortable
 3. Stories must be able to attach themselves to a Sprint (or more than one sprint, i.e. if it was not finished in an earlier sprint...)
 4. Stories must be creatable, editable and deletable
 -->
 
-    <div class="ui grid">
-        <div class="twelve wide column">
-            <article class="ui blue raised segment">
-            </article>
-        </div>
-    </div>
+<div class="ui grid grid-wrapper">
+
+	<div class="left floated left aligned eight wide column">  
+
+		<div class="ui items">
+			<div class="item stories-box completed piled segment">
+				<div class="align-right">
+						<div class="ui basic animated fade button story-functions">
+							<div class="visible content"><i class="edit icon"></i>
+							</div>
+							<div class="hidden content">
+								Edit
+							</div>
+						</div>
+						<div class="ui basic animated fade button story-functions">
+							<div class="visible content"><i class="move icon"></i>
+							</div>
+							<div class="hidden content">
+								Move
+							</div>
+						</div>
+						<div class="ui basic animated fade button story-functions ">
+							<div class="visible content"><i class="expand icon"></i>
+							</div>
+							<div class="hidden content">
+								View
+							</div>
+						</div>
+						<div class="ui basic animated fade button story-functions ">
+							<div class="visible content"><i class="remove icon"></i>
+							</div>
+							<div class="hidden content">
+								Delete
+							</div>
+						</div>
+					</div>
+				<div class="relative ">
+					
+
+					<h2>To Do (12)</h2>
+				</div>
+				<div class="ui story">
+
+					<p>As a Product Manager, I need to be able to see everything that is going on.</p>
+					<p>As a Product Manager, I need to be able to see everything that is going on.</p>
+					<div class="ui grid">
+						<div class="twelve wide left alignrd column">
+							<div class="ui label">
+								Stories
+								<a class="detail"><i class="bookmark icon"></i> 42</a>
+							</div>
+							<div class="ui label">
+								To do
+								<a class="detail"><i class="cubes icon"></i> 23</a>
+							</div>
+							<div class="ui label">
+								Started
+								<a class="detail"><i class="refresh icon"></i> 7</a>
+							</div>
+							<div class="ui label">
+								Finished
+								<a class="detail"><i class="checkmark icon"></i> 11</a>
+							</div>
+						</div>
+						<div class="four wide column right aligned"> <div class="ui right floated button">Attached</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="item stories-box unassinged piled segment">
+			<div class="align-right">
+						<div class="ui basic animated fade button story-functions">
+							<div class="visible content"><i class="edit icon"></i>
+							</div>
+							<div class="hidden content">
+								Edit
+							</div>
+						</div>
+						<div class="ui basic animated fade button story-functions">
+							<div class="visible content"><i class="move icon"></i>
+							</div>
+							<div class="hidden content">
+								Move
+							</div>
+						</div>
+						<div class="ui basic animated fade button story-functions ">
+							<div class="visible content"><i class="expand icon"></i>
+							</div>
+							<div class="hidden content">
+								View
+							</div>
+						</div>
+						<div class="ui basic animated fade button story-functions ">
+							<div class="visible content"><i class="remove icon"></i>
+							</div>
+							<div class="hidden content">
+								Delete
+							</div>
+						</div>
+					</div>
+				<div class="relative ">
+					
+
+					<h2>To Do (12)</h2>
+				</div>
+				<div class="ui story">
+
+					<p>As a Product Manager, I need to be able to see everything that is going on.</p>
+					<p>As a Product Manager, I need to be able to see everything that is going on.</p>
+					<div class="ui grid">
+						<div class="twelve wide left alignrd column">
+							<div class="ui label">
+								Stories
+								<a class="detail"><i class="bookmark icon"></i> 42</a>
+							</div>
+							<div class="ui label">
+								To do
+								<a class="detail"><i class="cubes icon"></i> 23</a>
+							</div>
+							<div class="ui label">
+								Started
+								<a class="detail"><i class="refresh icon"></i> 7</a>
+							</div>
+							<div class="ui label">
+								Finished
+								<a class="detail"><i class="checkmark icon"></i> 11</a>
+							</div>
+						</div>
+						<div class="four wide column right aligned"> <div class="ui right floated button">Attached</div>
+					</div>
+				</div>
+
+			</div>
+	</div>
+	<div class="item stories-box attached piled segment">
+		<div class="align-right">
+						<div class="ui basic animated fade button story-functions">
+							<div class="visible content"><i class="edit icon"></i>
+							</div>
+							<div class="hidden content">
+								Edit
+							</div>
+						</div>
+						<div class="ui basic animated fade button story-functions">
+							<div class="visible content"><i class="move icon"></i>
+							</div>
+							<div class="hidden content">
+								Move
+							</div>
+						</div>
+						<div class="ui basic animated fade button story-functions ">
+							<div class="visible content"><i class="expand icon"></i>
+							</div>
+							<div class="hidden content">
+								View
+							</div>
+						</div>
+						<div class="ui basic animated fade button story-functions ">
+							<div class="visible content"><i class="remove icon"></i>
+							</div>
+							<div class="hidden content">
+								Delete
+							</div>
+						</div>
+					</div>
+				<div class="relative ">
+					
+
+					<h2>To Do (12)</h2>
+				</div>
+				<div class="ui story">
+
+					<p>As a Product Manager, I need to be able to see everything that is going on.</p>
+					<p>As a Product Manager, I need to be able to see everything that is going on.</p>
+					<div class="ui grid">
+						<div class="twelve wide left alignrd column">
+							<div class="ui label">
+								Stories
+								<a class="detail"><i class="bookmark icon"></i> 42</a>
+							</div>
+							<div class="ui label">
+								To do
+								<a class="detail"><i class="cubes icon"></i> 23</a>
+							</div>
+							<div class="ui label">
+								Started
+								<a class="detail"><i class="refresh icon"></i> 7</a>
+							</div>
+							<div class="ui label">
+								Finished
+								<a class="detail"><i class="checkmark icon"></i> 11</a>
+							</div>
+						</div>
+						<div class="four wide column right aligned"> <div class="ui right floated button">Attached</div>
+					</div>
+				</div>
+
+			</div>
+</div>
+</div>
 
 
+</div>
+<div class="right floated left aligned eight wide column">
+	<div class="ui items">
+		<div class="item stories-box completed piled segment">
+			<div class="align-right">
+						<div class="ui basic animated fade button story-functions">
+							<div class="visible content"><i class="edit icon"></i>
+							</div>
+							<div class="hidden content">
+								Edit
+							</div>
+						</div>
+						<div class="ui basic animated fade button story-functions">
+							<div class="visible content"><i class="move icon"></i>
+							</div>
+							<div class="hidden content">
+								Move
+							</div>
+						</div>
+						<div class="ui basic animated fade button story-functions ">
+							<div class="visible content"><i class="expand icon"></i>
+							</div>
+							<div class="hidden content">
+								View
+							</div>
+						</div>
+						<div class="ui basic animated fade button story-functions ">
+							<div class="visible content"><i class="remove icon"></i>
+							</div>
+							<div class="hidden content">
+								Delete
+							</div>
+						</div>
+					</div>
+				<div class="relative ">
+					
 
+					<h2>To Do (12)</h2>
+				</div>
+				<div class="ui story">
 
+					<p>As a Product Manager, I need to be able to see everything that is going on.</p>
+					<p>As a Product Manager, I need to be able to see everything that is going on.</p>
+					<div class="ui grid">
+						<div class="twelve wide left alignrd column">
+							<div class="ui label">
+								Stories
+								<a class="detail"><i class="bookmark icon"></i> 42</a>
+							</div>
+							<div class="ui label">
+								To do
+								<a class="detail"><i class="cubes icon"></i> 23</a>
+							</div>
+							<div class="ui label">
+								Started
+								<a class="detail"><i class="refresh icon"></i> 7</a>
+							</div>
+							<div class="ui label">
+								Finished
+								<a class="detail"><i class="checkmark icon"></i> 11</a>
+							</div>
+						</div>
+						<div class="four wide column right aligned"> <div class="ui right floated button">Attached</div>
+					</div>
+				</div>
+
+			</div>
+	</div>
+	<div class="item stories-box unassinged piled segment">
+		<div class="align-right">
+						<div class="ui basic animated fade button story-functions">
+							<div class="visible content"><i class="edit icon"></i>
+							</div>
+							<div class="hidden content">
+								Edit
+							</div>
+						</div>
+						<div class="ui basic animated fade button story-functions">
+							<div class="visible content"><i class="move icon"></i>
+							</div>
+							<div class="hidden content">
+								Move
+							</div>
+						</div>
+						<div class="ui basic animated fade button story-functions ">
+							<div class="visible content"><i class="expand icon"></i>
+							</div>
+							<div class="hidden content">
+								View
+							</div>
+						</div>
+						<div class="ui basic animated fade button story-functions ">
+							<div class="visible content"><i class="remove icon"></i>
+							</div>
+							<div class="hidden content">
+								Delete
+							</div>
+						</div>
+					</div>
+				<div class="relative ">
+					
+
+					<h2>To Do (12)</h2>
+				</div>
+				<div class="ui story">
+
+					<p>As a Product Manager, I need to be able to see everything that is going on.</p>
+					<p>As a Product Manager, I need to be able to see everything that is going on.</p>
+					<div class="ui grid">
+						<div class="twelve wide left alignrd column">
+							<div class="ui label">
+								Stories
+								<a class="detail"><i class="bookmark icon"></i> 42</a>
+							</div>
+							<div class="ui label">
+								To do
+								<a class="detail"><i class="cubes icon"></i> 23</a>
+							</div>
+							<div class="ui label">
+								Started
+								<a class="detail"><i class="refresh icon"></i> 7</a>
+							</div>
+							<div class="ui label">
+								Finished
+								<a class="detail"><i class="checkmark icon"></i> 11</a>
+							</div>
+						</div>
+						<div class="four wide column right aligned"> <div class="ui right floated button">Attached</div>
+					</div>
+				</div>
+
+			</div>
+</div>
+<div class="item stories-box attached piled segment">
+	<div class="align-right">
+						<div class="ui basic animated fade button story-functions">
+							<div class="visible content"><i class="edit icon"></i>
+							</div>
+							<div class="hidden content">
+								Edit
+							</div>
+						</div>
+						<div class="ui basic animated fade button story-functions">
+							<div class="visible content"><i class="move icon"></i>
+							</div>
+							<div class="hidden content">
+								Move
+							</div>
+						</div>
+						<div class="ui basic animated fade button story-functions ">
+							<div class="visible content"><i class="expand icon"></i>
+							</div>
+							<div class="hidden content">
+								View
+							</div>
+						</div>
+						<div class="ui basic animated fade button story-functions ">
+							<div class="visible content"><i class="remove icon"></i>
+							</div>
+							<div class="hidden content">
+								Delete
+							</div>
+						</div>
+					</div>
+				<div class="relative ">
+					
+
+					<h2>To Do (12)</h2>
+				</div>
+				<div class="ui story">
+
+					<p>As a Product Manager, I need to be able to see everything that is going on.</p>
+					<p>As a Product Manager, I need to be able to see everything that is going on.</p>
+					<div class="ui grid">
+						<div class="twelve wide left alignrd column">
+							<div class="ui label">
+								Stories
+								<a class="detail"><i class="bookmark icon"></i> 42</a>
+							</div>
+							<div class="ui label">
+								To do
+								<a class="detail"><i class="cubes icon"></i> 23</a>
+							</div>
+							<div class="ui label">
+								Started
+								<a class="detail"><i class="refresh icon"></i> 7</a>
+							</div>
+							<div class="ui label">
+								Finished
+								<a class="detail"><i class="checkmark icon"></i> 11</a>
+							</div>
+						</div>
+						<div class="four wide column right aligned"> <div class="ui right floated button">Attached</div>
+					</div>
+				</div>
+
+			</div>
+</div>
+</div>
+</div>
+</div>
 </template>

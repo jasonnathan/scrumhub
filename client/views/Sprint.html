@@ -1,222 +1,303 @@
 <template name="Sprint">
-<div class="content-wrapper">
-<div class="time_bar">
-    <ol>
-      <li>
-        Point 1
-        <span class="details">
-          Feb 5 2015
-        </span>
-      </li>
-      <li>
-        Point 2
-        <span class="details">
-          Feb 8 2015
-        </span>
+    <div class="content-wrapper">
+
+        <div class="time_bar ui segment">
+            <div class="ui task-heading-bg">
+                <div class="four wide column left aligned"><h3>Event 1</h3></div>
+                <div class="four wide column"></div>
+                <div class="four wide column"></div>
+                <div class="four wide column right aligned"></div>
+            </div>
+            <ol>
+              <li>
+                Point 1
+                <span class="details">
+                  Feb 5 2015
+              </span>
+          </li>
+          <li>
+            Point 2
+            <span class="details">
+              Feb 8 2015
+          </span>
       </li>
       <li>
         Point 3
         <span class="details">
           Feb 15 2015
-        </span>
-      </li>
-    </ol>
+      </span>
+  </li>
+  <li>
+    Point 4
+    <span class="details">
+      Feb 15 2015
+  </span>
+</li>
+<li>
+    Point 5
+    <span class="details">
+      Feb 18 2015
+  </span>
+</li>
+<li>
+    Point 6
+    <span class="details">
+      Feb 22 2015
+  </span>
+</li>
+</ol>
+<div class="ui grid task-date-bg">
+    <div class="four wide column left aligned">5/02/2015</div>
+    <div class="four wide column"></div>
+    <div class="four wide column"></div>
+    <div class="four wide column right aligned">24/02/2015</div>
 </div>
-<div class="graph-bg">
-<div class="ui primary button bt-right">
-  View Graph
+<div class="ui grid">
+    <div class="twelve wide left alignrd column">
+        <div class="ui label">
+          Stories
+          <a class="detail"><i class="bookmark icon"></i> 42</a>
+      </div>
+      <div class="ui label">
+          To do
+          <a class="detail"><i class="cubes icon"></i> 23</a>
+      </div>
+      <div class="ui label">
+          Started
+          <a class="detail"><i class="refresh icon"></i> 7</a>
+      </div>
+      <div class="ui label">
+          Finished
+          <a class="detail"><i class="checkmark icon"></i> 11</a>
+      </div>
+  </div>
+  <div class="four wide column right aligned"><div class="ui primary button bt-right">
+      View More
+  </div>
 </div>
+</div>
+<!-- hide/dispaly below div when cleck View more button-->
+<div class="Section-details">
+    <div class="graph-bg">
+        <div class="ui grid">
+            <div class="twelve wide column"></div>
+            <div class="four wide column right aligned"><div class="ui primary button bt-right">
+              View Graph
+          </div>
+      </div>
+  </div>
+
+  <div>
     <div>
-        <div>
-            <canvas id="canvas" height="250px" width="800px"></canvas>
-        </div>
-    </div>  
+        <canvas id="canvas" height="250px" width="800px"></canvas>
+    </div>
+</div>  
 </div>
-    <div class="ui grid">
-        <div class="equal height row">
-            <section class="cols boardCol todoCol four wide column">
-                <div class="relative">
-                    <span class="ui corner inverted orange label">15</span>
-                    <h2>Stories</h2>
-                </div>
-                <div class="ui light-blue inverted segment piled story">
-                    <div class="3 small fluid ui buttons">
-                        <div class="ui basic animated fade button">
-                            <div class="visible content"><i class="edit icon"></i>
-                            </div>
-                            <div class="hidden content">
-                                Edit
-                            </div>
+<div class="ui grid" >
+
+    <div class="left floated left aligned four wide column">  
+
+        <div class="ui items">
+            <div class="item stories-box light-blue completed piled segment">
+                <div class="align-right">
+                    <div class="ui basic animated fade button story-functions">
+                        <div class="visible content"><i class="edit icon"></i>
                         </div>
-                        <div class="ui basic animated fade button">
-                            <div class="visible content"><i class="move icon"></i>
-                            </div>
-                            <div class="hidden content">
-                                Move
-                            </div>
-                        </div>
-                        <div class="ui basic animated fade button" id="dropAccordion">
-                            <div class="visible content"><i class="expand icon"></i>
-                            </div>
-                            <div class="hidden content">
-                                Expand
-                            </div>
+                        <div class="hidden content">
+                            Edit
                         </div>
                     </div>
-                    <h4><a class="header">As a Product Manager, I need to be able to see everything that is going on.</a></h4>
-                    <a class="small ui teal label">Sprint 1</a>
-                    <a class="small ui red label">Testing</a>
-                    <a class="small ui green label">Passed</a>
-
-    <div class="ui accordion">
-        <div class="title">
-          <i class="icon dropdown"></i>
-          More Details
-        </div>
-        <div class="content">
-          <p>Some more infomation</p>
-        </div>
-
-      </div>
-                </div>
-            </section>
-            <section class="cols boardCol todoCol four wide column">
-                <div class="relative">
-                    <span class="ui corner inverted orange label">12</span>
-                    <h2>To Do</h2>
-                </div>
-                <div class="ui light-red inverted segment piled story">
-                    <div class="3 small fluid ui buttons">
-                        <div class="ui basic animated fade button">
-                            <div class="visible content"><i class="edit icon"></i>
-                            </div>
-                            <div class="hidden content">
-                                Edit
-                            </div>
+                    <div class="ui basic animated fade button story-functions">
+                        <div class="visible content"><i class="move icon"></i>
                         </div>
-                        <div class="ui basic animated fade button">
-                            <div class="visible content"><i class="move icon"></i>
-                            </div>
-                            <div class="hidden content">
-                                Move
-                            </div>
-                        </div>
-                        <div class="ui basic animated fade button ">
-                            <div class="visible content"><i class="expand icon"></i>
-                            </div>
-                            <div class="hidden content">
-                                Expand
-                            </div>
+                        <div class="hidden content">
+                            Move
                         </div>
                     </div>
-                    <h4><a class="header">As a Product Manager, I need to be able to see everything that is going on.</a></h4>
-                    <a class="small ui teal label">Sprint 1</a>
-                    <a class="small ui red label">Testing</a>
-                    <a class="small ui green label">Passed</a>
-                    <div class="ui accordion">
-        <div class="title">
-          <i class="icon dropdown"></i>
-          More Details
-        </div>
-        <div class="content">
-          <p>Some more infomation</p>
-        </div>
-
-      </div>
-       </div>
-            </section>
-            <section class="cols boardCol startedCol four wide column">
-                <div class="relative">
-                    <span class="ui corner inverted orange label">12</span>
-                    <h2>Started</h2>
-                </div>
-                <div class="ui light-yellow inverted segment piled story">
-                    <div class="3 small fluid ui buttons">
-                        <div class="ui basic animated fade button">
-                            <div class="visible content"><i class="edit icon"></i>
-                            </div>
-                            <div class="hidden content">
-                                Edit
-                            </div>
+                    <div class="ui basic animated fade button story-functions ">
+                        <div class="visible content"><i class="expand icon"></i>
                         </div>
-                        <div class="ui basic animated fade button">
-                            <div class="visible content"><i class="move icon"></i>
-                            </div>
-                            <div class="hidden content">
-                                Move
-                            </div>
-                        </div>
-                        <div class="ui basic animated fade button ">
-                            <div class="visible content"><i class="expand icon"></i>
-                            </div>
-                            <div class="hidden content">
-                                Expand
-                            </div>
+                        <div class="hidden content">
+                            View
                         </div>
                     </div>
-                    <h4><a class="header">As a Product Manager, I need to be able to see everything that is going on.</a></h4>
-                    <a class="small ui teal label">Sprint 1</a>
-                    <a class="small ui red label">Testing</a>
-                    <a class="small ui green label">Passed</a> 
-                    <div class="ui accordion">
-        <div class="title">
-          <i class="icon dropdown"></i>
-          More Details
-        </div>
-        <div class="content">
-          <p>Some more infomation</p>
-        </div>
 
-      </div>
-      </div>
-            </section>
-            <section class="cols boardCol completedCol four wide column">
-                <div class="relative">
-                    <span class="ui corner inverted orange label">12</span>
-                    <h2>Finished</h2>
                 </div>
-<div class="ui light-green inverted segment piled story">
-                    <div class="3 small fluid ui buttons">
-                        <div class="ui basic animated fade button">
-                            <div class="visible content"><i class="edit icon"></i>
-                            </div>
-                            <div class="hidden content">
-                                Edit
-                            </div>
+                <div class="relative ">
+
+
+                    <h2>Stories (12)</h2>
+                </div>
+                <div class="ui story">
+
+                    <p>As a Product Manager, I need to be able to see everything that is going on.</p>
+                    <p>As a Product Manager, I need to be able to see everything that is going on.</p>
+                    <div class="ui grid">
+                        <div class="sixteen wide left alignrd column">
+                            <a class="small ui teal label">Sprint 1</a>
+                            <a class="small ui red label">Testing</a>
+                            <a class="small ui green label">Passed</a>
                         </div>
-                        <div class="ui basic animated fade button">
-                            <div class="visible content"><i class="move icon"></i>
-                            </div>
-                            <div class="hidden content">
-                                Move
-                            </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="left floated left aligned four wide column">  
+
+        <div class="ui items">
+            <div class="item stories-box completed piled segment">
+                <div class="align-right">
+                    <div class="ui basic animated fade button story-functions">
+                        <div class="visible content"><i class="edit icon"></i>
                         </div>
-                        <div class="ui basic animated fade button" id="dropAccordion">
-                            <div class="visible content"><i class="expand icon"></i>
-                            </div>
-                            <div class="hidden content">
-                                Expand
-                            </div>
+                        <div class="hidden content">
+                            Edit
                         </div>
                     </div>
-                    <h4><a class="header">As a Product Manager, I need to be able to see everything that is going on.</a></h4>
-                    <a class="small ui teal label">Sprint 1</a>
-                    <a class="small ui red label">Testing</a>
-                    <a class="small ui green label">Passed</a>
+                    <div class="ui basic animated fade button story-functions">
+                        <div class="visible content"><i class="move icon"></i>
+                        </div>
+                        <div class="hidden content">
+                            Move
+                        </div>
+                    </div>
+                    <div class="ui basic animated fade button story-functions ">
+                        <div class="visible content"><i class="expand icon"></i>
+                        </div>
+                        <div class="hidden content">
+                            View
+                        </div>
+                    </div>
 
-<div class="ui accordion">
-        <div class="title">
-          <i class="icon dropdown"></i>
-          More Details
-        </div>
-        <div class="content">
-          <p>Some more infomation</p>
-        </div>
-
-      </div>
                 </div>
-            </section>
+                <div class="relative ">
+
+
+                    <h2>To Do (12)</h2>
+                </div>
+                <div class="ui story">
+
+                    <p>As a Product Manager, I need to be able to see everything that is going on.</p>
+                    <p>As a Product Manager, I need to be able to see everything that is going on.</p>
+                    <div class="ui grid">
+                        <div class="sixteen wide left alignrd column">
+                            <a class="small ui teal label">Sprint 1</a>
+                            <a class="small ui red label">Testing</a>
+                            <a class="small ui green label">Passed</a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </div>
+    <div class="left floated left aligned four wide column">  
+
+        <div class="ui items">
+            <div class="item stories-box completed piled segment">
+                <div class="align-right">
+                    <div class="ui basic animated fade button story-functions">
+                        <div class="visible content"><i class="edit icon"></i>
+                        </div>
+                        <div class="hidden content">
+                            Edit
+                        </div>
+                    </div>
+                    <div class="ui basic animated fade button story-functions">
+                        <div class="visible content"><i class="move icon"></i>
+                        </div>
+                        <div class="hidden content">
+                            Move
+                        </div>
+                    </div>
+                    <div class="ui basic animated fade button story-functions ">
+                        <div class="visible content"><i class="expand icon"></i>
+                        </div>
+                        <div class="hidden content">
+                            View
+                        </div>
+                    </div>
+
+                </div>
+                <div class="relative ">
+
+
+                    <h2>Started (12)</h2>
+                </div>
+                <div class="ui story">
+
+                    <p>As a Product Manager, I need to be able to see everything that is going on.</p>
+                    <p>As a Product Manager, I need to be able to see everything that is going on.</p>
+                    <div class="ui grid">
+                        <div class="sixteen wide left alignrd column">
+                            <a class="small ui teal label">Sprint 1</a>
+                            <a class="small ui red label">Testing</a>
+                            <a class="small ui green label">Passed</a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="left floated left aligned four wide column">  
+
+        <div class="ui items">
+            <div class="item stories-box completed piled segment">
+                <div class="align-right">
+                    <div class="ui basic animated fade button story-functions">
+                        <div class="visible content"><i class="edit icon"></i>
+                        </div>
+                        <div class="hidden content">
+                            Edit
+                        </div>
+                    </div>
+                    <div class="ui basic animated fade button story-functions">
+                        <div class="visible content"><i class="move icon"></i>
+                        </div>
+                        <div class="hidden content">
+                            Move
+                        </div>
+                    </div>
+                    <div class="ui basic animated fade button story-functions ">
+                        <div class="visible content"><i class="expand icon"></i>
+                        </div>
+                        <div class="hidden content">
+                            View
+                        </div>
+                    </div>
+
+                </div>
+                <div class="relative ">
+
+
+                    <h2>Finished (12)</h2>
+                </div>
+                <div class="ui story">
+
+                    <p>As a Product Manager, I need to be able to see everything that is going on.</p>
+                    <p>As a Product Manager, I need to be able to see everything that is going on.</p>
+                    <div class="ui grid">
+                        <div class="sixteen wide left alignrd column">
+                            <a class="small ui teal label">Sprint 1</a>
+                            <a class="small ui red label">Testing</a>
+                            <a class="small ui green label">Passed</a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 </div>
 </div>
 </template>

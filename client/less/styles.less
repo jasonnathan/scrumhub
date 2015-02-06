@@ -5,16 +5,78 @@ body {
     font-family: "Raleway";
     color: #333;
     h1, h2, h3, h4, h5, h6 {
-        font-family: "Raleway";
+    font-family: "Raleway";
     }
 }
 
 body > .pusher {
     margin-top: 2.5em;
 }
+.menu-wrapper{
+    width: 90% !important;
+    margin:0px auto !important;
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+.grid-wrapper{ 
+	margin: 20px 3% !important;
+	width: 94% !important;
+	}
+}
 
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+.grid-wrapper{ 
+	margin: 20px 3% !important;
+	width: 94% !important;
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+.grid-wrapper{ 
+	margin: 20px 3% !important;
+	width: 94% !important;
+	}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+.grid-wrapper{ 
+	margin: 20px 5% !important;
+	width: 90% !important;
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+.grid-wrapper{ 
+	margin: 20px 5% !important;
+	width: 90% !important;
+	}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+.grid-wrapper{ 
+	margin: 20px 5% !important;
+	width: 90% !important;
+	}
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+.grid-wrapper{ 
+	margin: 20px 5% !important;
+	width: 90% !important;
+	}
+}
+body > .pusher{
+	margin-top: 3.5em !important;
+}
 @import "./less-prefixer.import.less";
 @import "./loginForm.import.less";
 @import "./MainMenu.import.less";
 @import "./common.import.less";
 @import "./Sprint.import.less";
+@import "./Stories.import.less";

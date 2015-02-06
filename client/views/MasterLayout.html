@@ -1,11 +1,49 @@
 <template name="MasterLayout">
-    {{> MainMenu}}
-    <div class="ui top fixed menu">
-        <a class="item" id="toggleSideBar">
-            <i class="sidebar icon"></i> Menu
-        </a>
-    </div>
+    
+        <div class="ui top fixed menu">
+        <div class="menu-wrapper">
+            <div class="ui tiered menu">
+              <div class="menu">
+                <a href="{{pathFor route='Stories'}}" class="{{isActiveRoute regex='Stories'}} item">
+                <i class="file text outline icon"></i> Stories (PBI)
+            </a>
+            <a href="{{pathFor route='Sprints'}}" class="{{isActiveRoute regex='Sprints'}} item">
+                <i class="tasks icon"></i> Sprints
+            </a>
+            <a href="{{pathFor route='Profile'}}" class="{{isActiveRoute regex='Profile'}} item">
+                <i class="smile icon"></i> Profile
+            </a>
+            <a href="{{pathFor route='Admin'}}" class="{{isActiveRoute regex='Admin'}} item">
+                <i class="setting icon"></i> Admin
+            </a>
+                <div class="right menu">
+                  
+                  <a class="item">
+                    Logout
+                   <i class="power icon"></i>
+                   </a>
+                </div>
+              </div>
+              <div class="ui sub menu">
+                <div class="item">
+                    <div class="ui icon input">
+                      <input type="text" placeholder="Search...">
+                      <i class="search icon"></i>
+                    </div>
+                  </div>
+               
+                <a class="item"><i class="add circle icon"></i>Add New</a>
+                <div class="right menu">
+                 <a class="item"><i class="thumbs up icon"></i>Completed</a>
+                  <a class="item"><i class="wait icon"></i>Unassinged</a>
+                   <a class="item"><i class="flag icon"></i>Attached</a>
+                  </div>
+              </div>
 
+
+        </div>
+    </div>
+    </div>
     <div class="pusher">
         <div class="ui bottom segment">
             {{> yield}}
