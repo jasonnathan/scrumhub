@@ -55,5 +55,8 @@ Router.map(function () {
         path: '/forms',
         template: 'forms'
     });
-
+    this.route('Admin', {
+        path: '/Admin',
+        template: 'Admin'
+    });
 });
